@@ -2,18 +2,17 @@
 """This is the module that contains the models"""
 from models.engine.file_storage import FileStorage
 from models.base_model import BaseModel
-# from models.user import User
-# from models.place import Place
-# from models.state import State
-# from models.city import City
-# from models.amenity import Amenity
-# from models.review import Review
+from models.user import User
+from models.place import Place
+from models.state import State
+from models.city import City
+from models.amenity import Amenity
+from models.review import Review
 
 classes = {
-    'BaseModel': BaseModel,
-    # 'User': User, 'Place': Place,
-    # 'State': State, 'City': City, 'Amenity': Amenity,
-    # 'Review': Review
+    'BaseModel': BaseModel, 'User': User, 'Place': Place,
+    'State': State, 'City': City, 'Amenity': Amenity,
+    'Review': Review
 }
 types = {
     'number_rooms': int, 'number_bathrooms': int,
