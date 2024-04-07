@@ -7,6 +7,10 @@
 }
 .places h1 {
     font-size: 30px;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-bottom: 0px;
+
     flex: 1 0 100%;
 }
 .places article {
@@ -16,4 +20,6 @@
     border: solid #FF5A5F 1px ;
     border-radius: 4px;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
