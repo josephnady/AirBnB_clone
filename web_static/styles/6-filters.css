@@ -40,12 +40,15 @@ section.filters button:hover{
     font-size: 14px;
     margin: 0 0 0 0;
 }
-
+.locations:hover, .amenities:hover{
+    .popover{display: block;}
+}
 .popover {
+    display: none;
     background-color: #FAFAFA;
     border: #DDDDDD 1px solid;
     border-radius: 4px;
-    margin: 22px -52px 0px 0px;
+    margin: 20px -52px 0px 0px;
     padding: 20px 0px 25px 30px;
     position: relative;
     left: -51px;
@@ -58,6 +61,5 @@ section.filters button:hover{
     margin-left: 8% ;
     margin-bottom: 1% ;
 }
-
 
 
