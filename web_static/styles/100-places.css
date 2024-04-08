@@ -23,7 +23,7 @@
     flex-direction: column;
     justify-content: flex-start;
     position: relative;
-    box-shadow: 0px 15px 15px gray;
+    /* box-shadow: 0px 15px 15px gray; */
 }
 .places article h2 {
     font-size: 30px;
@@ -99,4 +99,49 @@
 .description > p {
     margin-top: 10px;
     margin-bottom: 0px;
+}
+.places ul{
+    list-style: none;
+    padding-left: 0px;
+}
+/* Places > Acticels > Amenities icons */
+.tvicon {
+    height: 40px;
+    width: 40px;
+    background: url(../images/icon_tv.png) center left no-repeat ; 
+    background-size: 70%;
+}
+.petsicon {
+    height: 40px;
+    width: 40px;
+    background: url(../images/icon_pets.png) center left no-repeat;
+    background-size: 70%;
+}
+.wifiicon {
+    height: 40px;
+    width: 40px;
+    background: url(../images/icon_wifi.png) center left no-repeat;
+    background-size: 70%;
+}
+.places .amenities li {
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.places .amenities h2, .places .reviews h2 {
+    font-size: 16px;
+    border-bottom: solid 1px #DDDDDD;
+    margin-top: .7em;
+    padding-bottom: .5em;
+    flex: 1 0 100%
+}
+.places li h3 {
+    font-size: 14px;
+    margin-top: 1em;
+    margin-bottom: auto;
+}
+.places .review li p {
+    font-size: 12px;
+    margin-top: .3em;
+    margin-bottom: auto;
 }

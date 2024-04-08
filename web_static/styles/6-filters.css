@@ -23,7 +23,7 @@ section.filters button{
 section.filters button:hover{
     opacity: 90%;
 }
-.locations, .amenities{
+.filters .locations,.filters .amenities{
     height: 100%;
     width: 25%;
     padding-left: 50px;
