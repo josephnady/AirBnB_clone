@@ -158,7 +158,7 @@ class HBNBCommand(cmd.Cmd):
         if "attr_val" not in list_of_args.keys():
             self.stdout.write("** value missing **\n")
             return
-        print(type(list_of_args["attr_val"]))
+        # print(type(list_of_args["attr_val"]))
         if list_of_args["attr_name"] in types.keys():
             list_of_args["attr_val"] = types[list_of_args["attr_name"]](
                 list_of_args["attr_val"].replace(
@@ -166,7 +166,7 @@ class HBNBCommand(cmd.Cmd):
             )
 
         # Start Updates
-        print(type(list_of_args["attr_val"]))
+        # print(type(list_of_args["attr_val"]))
         try:
             kwargs = {list_of_args["attr_name"]: list_of_args["attr_val"].replace(
                 '\"', '')}
