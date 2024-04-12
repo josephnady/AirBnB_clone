@@ -33,7 +33,7 @@ class FileStorage:
         """serializes __objects to the JSON file (path: __file_path)
         How it works:
         <class 'BaseModel'> -> to_dict() ->
-        <class 'dict'> ->  JSON dump ->  <class 'str'> -> FILE"""
+        <class 'dict'> ->  FJSON dump ->  <class 'str'> -> FILE"""
         json_objects = {}
         for key in type(self).__objects:
             # very important code as it leads to read all the obj in json
@@ -63,6 +63,7 @@ class FileStorage:
         if obj is not None:
             try:
                 del self.all()[obj]
+                self.save()
             except Exception:
                 raise "Wrong obj format, Usage <ClassName>.<ClassID>"
 
